@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Seeds</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Alumni+Sans+Pinstripe:ital@0;1&family=Amatic+SC:wght@400;700&family=Lovers+Quarrel&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="cursor1" class="w-[5px] h-[5px] absolute bg-white opacity-70 rounded-full duration-200 ease-out pointer-events-none z-[1000000000]"></div>
+    <div id="cursor2" class="w-[6rem] h-[6rem] absolute bg-transparent border-2 border-solid border-white opacity-70 rounded-full duration-[0.6s] ease-out pointer-events-none z-[1000000000] animate-cursorAnimation"></div>
+
+    <header class="w-[100vw] h-[15vh] flex justify-between box-border fixed top-0 bg-black text-white px-0 lg:px-5 z-50">
+        <div class="w-[20%] lg:w-[60%] h-full text-center flex items-start lg:items-center justify-start">
+            <a class="cursor-pointer alumni-sans-pinstripe-regular text-6xl lg:text-6xl uppercase tracking-[-0.09em] opacity-80 ml-5" href="index.html">Space Seeds</a>
+        </div>
+        <div class="w-[70vw] lg:w-[40%] h-[100vh] lg:h-[100%] flex flex-col justify-start lg:justify-around items-end lg:items-center raleway uppercase tracking-widest text-base lg:mx-0 transition-colors duration-500">
+            <div class="py-6 flex lg:hidden mr-5 z-50">
+                <label class="burger" for="mobileMenu">
+                    <input type="checkbox" id="mobileMenu">
+                    <span class="transition-colors duration-500 ease-in"></span>
+                    <span class="transition-colors duration-500 ease-in"></span>
+                    <span class="transition-colors duration-500 ease-in"></span>
+                </label>
+            </div>
+
+            <div id="menu" class="w-[70vw] lg:w-[40%] h-[100vh] lg:h-full pt-28 px-6 lg:p-0 absolute bg-white lg:bg-black text-black lg:text-gray-400 flex flex-col lg:flex-row justify-start lg:justify-around items-end lg:items-center raleway uppercase tracking-widest text-base mr-[-30rem] lg:mr-0 transition-[margin] ease-linear duration-500">
+                <a class="nav_link active" href="#home">Home</a>
+                <a class="nav_link" href="#s1">Seed Advisor</a>
+                <a class="nav_link" href="#s2">S2</a>
+                <a class="nav_link" href="#s3">S3</a>
+                <a class="nav_link" href="#s4">S4</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="w-full h-full bg-black text-white">
+        <section id="home" class="section relative w-full h-[100vh] flex justify-center items-center">
+            <div class="h-full w-full flex justify-center items-end overflow-hidden bg-black maskimage">
+                <img class="w-auto h-[80%] scale-105 opacity-60" src="images/bg.png">
+            </div>
+
+            <div class="absolute w-full h-auto flex justify-center items-center alumni-sans-pinstripe-regular mt-[-200px]">
+                <div class="w-auto h-auto text-[6.5rem] tracking-[0.03em] leading-[1] text-center amatic-sc-regular">
+                    " Discovering the future <br> of gernomics "</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="s1" class="raleway section w-full h-[100vh] flex flex-col justify-center items-center">
+          <div class="amatic-sc-regular text-white text-[4rem] mb-12">
+            Seed Advisor
+          </div>
+
+          <div class="w-auto h-auto flex space-x-28">
+            <div class="product-container product-1">
+              <div class="card">
+                <div class="photo"></div>
+                <div class="content">
+                  <div class="title">Nitrogen</div>
+                  <div class="bg-title">NIT</div>
+                  <div class="feature size">
+                    <div class="relative mb-4">
+                      <input type="text" id="name" name="name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                  </div>
+                  <button class="btn-buy">Confirm</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-container product-1">
+              <div class="card">
+                <div class="photo"></div>
+                <div class="content">
+                  <div class="title">Phosphorous</div>
+                  <div class="bg-title">PHS</div>
+                  <div class="feature size">
+                    <div class="relative mb-4">
+                      <input type="text" id="name" name="name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                  </div>
+                  <button class="btn-buy">Confirm</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-container product-1">
+              <div class="card">
+                <div class="photo"></div>
+                <div class="content">
+                  <div class="title">Potassium</div>
+                  <div class="bg-title">PTS</div>
+                  <div class="feature size">
+                    <div class="relative mb-4">
+                      <input type="text" id="name" name="name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                  </div>
+                  <button class="btn-buy">Confirm</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <section id="s2" class="section w-full h-[100vh] flex justify-center items-center">S2</section>
+
+        <section id="s3" class="section w-full h-[100vh] flex justify-center items-center">S3</section>
+
+        <section id="s4" class="section w-full h-[100vh] flex justify-center items-center">S4</section>
+    </main>
+
+    <footer id="footer" class="section text-gray-400 bg-black body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap md:text-left text-center order-first">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-400 hover:text-white">First Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white">Second Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white">Third Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white">Fourth Link</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-400 hover:text-white">First Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white">Second Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white">Third Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white">Fourth Link</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-400 hover:text-white">First Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white">Second Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white">Third Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white">Fourth Link</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">SUBSCRIBE</h2>
+              <div class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
+                <div class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
+                  <label for="footer-field" class="leading-7 text-sm text-gray-400">Email</label>
+                  <input type="text" id="footer-field" name="footer-field" class="w-full bg-gray-800 rounded border bg-opacity-40 border-gray-700 focus:bg-transparent focus:ring-2 focus:ring-indigo-900 focus:border-white text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <button class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-black bg-gray-400 border-0 py-2 px-6 focus:outline-none hover:bg-white rounded">Subscribe</button>
+              </div>
+              <p class="text-gray-500 text-sm mt-2 md:text-left text-center">Harvesting Tomorrow's Possibilities in Space
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-black">
+          <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+            <div class="w-auto h-full flex title-font font-medium items-center md:justify-start justify-center text-white">
+                <a class="cursor-pointer alumni-sans-pinstripe-regular text-6xl lg:text-6xl uppercase tracking-[-0.09em]" href="index.html">Space Seeds</a>
+            </div>
+            <p class="text-sm text-gray-400 sm:ml-6 sm:mt-0 mt-4">© 2024 HackIT —
+              <a href="https://twitter.com/knyttneve" class="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">@spaceseeds</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+              <a class="text-gray-400">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-400">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-400">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-400">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
