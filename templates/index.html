@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Crop Recommendation</title>
+	</head>
+	<body>
+		<div style="text-align: center">
+			<h1>Crop Recommendation and Hybridization</h1>
+			<form
+				action="http://127.0.0.1:5000/predict"
+				method="post">
+				<div>
+					<label for="N">Nitrogen Content (N):</label>
+					<input
+						type="number"
+						name="N"
+						step="any"
+						required />
+				</div>
+				<div>
+					<label for="P">Phosphorus Content (P):</label>
+					<input
+						type="number"
+						name="P"
+						step="any"
+						required />
+				</div>
+				<div>
+					<label for="K">Potassium Content (K):</label>
+					<input
+						type="number"
+						name="K"
+						step="any"
+						required />
+				</div>
+				<div>
+					<label for="temperature">Temperature (°C):</label>
+					<input
+						type="number"
+						name="temperature"
+						step="any"
+						required />
+				</div>
+				<div>
+					<label for="humidity">Humidity (%):</label>
+					<input
+						type="number"
+						name="humidity"
+						step="any"
+						required />
+				</div>
+				<div>
+					<label for="ph">Soil pH:</label>
+					<input
+						type="number"
+						name="ph"
+						step="any"
+						required />
+				</div>
+				<div>
+					<label for="rainfall">Rainfall (mm):</label>
+					<input
+						type="number"
+						name="rainfall"
+						step="any"
+						required />
+				</div>
+				<div>
+					<label for="planet">Planet:</label>
+					<select
+						name="planet"
+						required>
+						<option value="Earth">Earth</option>
+						<option value="Mars">Mars</option>
+					</select>
+				</div>
+				<br />
+				<button type="submit">Predict</button>
+			</form>
+			<br />
+			{% if prediction_text %}
+			<h2>{{ prediction_text }}</h2>
+			{% endif %} {% if hybrid_text %}
+			<h2>{{ hybrid_text }}</h2>
+			{% endif %} {% if hybrid_traits %}
+			<h2>{{ hybrid_traits }}</h2>
+			{% endif %}
+		</div>
+	</body>
+</html>
