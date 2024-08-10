@@ -1,0 +1,39 @@
+<!-- templates/fertilizer.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fertilizer Recommendation</title>
+</head>
+<body>
+    <h1>Fertilizer Recommendation</h1>
+    <form action="/fertilizer" method="post">
+        <label for="soil_ph">Soil pH:</label>
+        <input type="text" id="soil_ph" name="soil_ph" required><br>
+        
+        <label for="nitrogen">Nitrogen (N):</label>
+        <input type="text" id="nitrogen" name="nitrogen" required><br>
+        
+        <label for="phosphate">Phosphate (P):</label>
+        <input type="text" id="phosphate" name="phosphate" required><br>
+        
+        <label for="potassium">Potassium (K):</label>
+        <input type="text" id="potassium" name="potassium" required><br>
+        
+        <label for="crop">Select Crop:</label>
+        <select id="crop" name="crop" required>
+            {% for crop in crops %}
+                <option value="{{ crop }}">{{ crop }}</option>
+            {% endfor %}
+        </select><br>
+        
+        <input type="submit" value="Get Recommendation">
+    </form>
+    
+    {% if recommendation %}
+        <h2>Recommended Fertilizer:</h2>
+        <p>{{ recommendation }}</p>
+    {% endif %}
+</body>
+</html>
