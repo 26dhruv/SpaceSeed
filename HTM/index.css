@@ -7,11 +7,13 @@
 
 .nav_link:hover,
 .nav_link:active {
-    color: white;
+    /* color: rgb(202 138 4 / var(--tw-text-opacity)); */
+    color: #fc9144;
 }
 
 .active {
-    color: rgb(202 138 4 / var(--tw-text-opacity))
+    /* color: rgb(202 138 4 / var(--tw-text-opacity)); */
+    color: #fc9144;
 }
 
 .maskimage
@@ -19,193 +21,306 @@
     mask-image: linear-gradient(white 80%, rgba(0,0,0,0));
 }
 
-/* From Uiverse.io by Admin12121 */ 
 .product-container {
-position: relative;
+    position: relative;
 }
 
 .card {
-/* font-family: Lato, sans-serif; */
-position: relative;
-width: 290px;
-height: 400px;
-background: #232323;
-border-radius: 20px;
-overflow: hidden;
+    position: relative;
+    width: 290px;
+    height: 400px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .card:before {
-content: '';
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background: var(--product-color);
-clip-path: circle(150px at 80% 20%);
-transition: .5s ease-in-out;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--product-color);
+    clip-path: circle(150px at 80% 20%);
+    transition: .5s ease-in-out;
 }
 
 .card:hover:before {
-clip-path: circle(300px at 80% -20%);
+    clip-path: circle(300px at 80% -20%);
 }
 
 .title {
-position: relative;
-font-size: 1.3rem;
-font-weight: 600;
-letter-spacing: 1px;
-color: #fff;
-margin-top: 12px;
+    position: relative;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-top: 12px;
 }
 
 .bg-title {
-font-size: 10em;
-font-weight: 900;
-font-style: italic;
-color: rgba(255,255,255,.04);
-position: absolute;
-max-width: 120%;
-top: -150%;
-transition: .6s;
+    font-size: 10em;
+    font-weight: 900;
+    font-style: italic;
+    color: rgba(255,255,255,.04);
+    position: absolute;
+    max-width: 120%;
+    top: -150%;
+    transition: .6s;
 }
 
 .card:hover .bg-title {
-transform: translateY(60%);
-}
-
-.photo {
-position: absolute;
-top: 50%;
-transform: translateY(-50%);
-z-index: 10;
-width: 100%;
-height: 220px;
-transition: .5s;
-}
-
-.card:hover .photo {
-top: 0%;
-transform: translateY(0%);
-}
-
-.photo img {
-position: absolute;
-width: 220px;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%) rotate(-25deg);
-transition: .5s;
-}
-
-.card:hover .photo img {
-width: 260px;
-top: 56%;
+    transform: translateY(60%);
 }
 
 .content {
-position: absolute;
-bottom: 0;
-width: 100%;
-height: 100px;
-text-align: center;
-transition: 1s;
-z-index: 5;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 5;
 }
 
 .card:hover .content {
-height: 190px;
+    height: 190px;
 }
 
 .feature {
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 8px 20px;
-transition: .5s;
-visibility: hidden;
-opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: .5s;
+    visibility: hidden;
+    opacity: 0;
 }
 
 .card:hover .feature {
-visibility: visible;
-opacity: 1;
-transition-delay: .5s;
-}
-
-.feature div {
-color: #fff;
-font-weight: 300;
-font-size: 14px;
-text-transform: uppercase;
-letter-spacing: 2px;
-margin-right: 10px;
-}
-
-.feature span {
-min-width: 20px;
-padding: 0 4px;
-height: 26px;
-text-align: center;
-line-height: 26px;
-font-size: 14px;
-display: inline-block;
-color: #111;
-background: #fff;
-margin: 0 5px;
-transition: .4s;
-border-radius: 4px;
-cursor: pointer
-}
-
-.feature span:hover {
-color: #000;
-background: var(--product-color);
+    visibility: visible;
+    opacity: 1;
+    transition-delay: .5s;
 }
 
 .btn-buy {
-display: inline-block;
-padding: 10px 20px;
-background: #fff;
-border: none;
-border-radius: 4px;
-margin-top: 10px;
-text-decoration: none;
-font-weight: 600;
-color: #111;
-opacity: 0;
-transform: translateY(50px);
-transition: 0.5s;
-cursor: pointer;
-outline: none;
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+    cursor: pointer;
+    outline: none;
 }
 
 .card:hover .btn-buy {
-opacity: 1;
-transform: translateY(0px);
-transition: 0.5s;
-transition-delay: 0.5s;
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 0.5s;
+    transition-delay: 0.5s;
 }
 
 .card:hover .btn-buy:hover {
-background: var(--product-color);
-transition-delay: 0;
-transition: 0.05s;
+    background: var(--product-color);
+    transition-delay: 0;
+    transition: 0.05s;
 }
 
-.product-1 {
---product-color: #EB6CA4;
+.product {
+    --product-color: #e95794b6;
 }
 
-.size span {
-cursor: pointer;
-z-index: 50;
+.feature input {
+    width: 210px;
+    height: 50px;
+    padding: 0 16px;
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid white;
+    color: #f9f9f9;
+    animation: shake_541 0.14s 3;
+    z-index: 100;
 }
 
-.feature .tt:hover {
-background: #038dff;
+.feature input:focus {
+    border: 1px solid white;
+    color: #f9f9f9;
+    outline: none;
+}
+  
+.feature input:valid {
+    animation: none;
+}
+  
+@keyframes shake_541 {
+    0%, 100% {
+        translate: 0;
+    }
+
+    25% {
+        translate: 8px 0;
+    }
+
+    75% {
+        translate: -8px 0;
+    }
 }
 
-.feature .ttt:hover {
-background: #09ff0d;
+/* From Uiverse.io by MuhammadHasann */ 
+.cal-container button {
+    position: relative;
+    padding: 12px 35px;
+    background: #fec195;
+    font-size: 17px;
+    font-weight: 500;
+    color: #181818;
+    border: 3px solid #fec195;
+    border-radius: 8px;
+    box-shadow: 0 0 0 #fec1958c;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
+  
+.star-1 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+}
+  
+.star-2 {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+}
+  
+.star-3 {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+}
+  
+.star-4 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+}
+  
+.star-5 {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 0.6s cubic-bezier(0, 0.4, 0, 1.01);
+}
+  
+.star-6 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 0.8s ease;
+}
+  
+.cal-container button:hover {
+    background: transparent;
+    color: #fec195;
+    box-shadow: 0 0 25px #fec1958c;
+}
+  
+.cal-container button:hover .star-1 {
+    position: absolute;
+    top: -80%;
+    left: -30%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+}
+  
+.cal-container button:hover .star-2 {
+    position: absolute;
+    top: -25%;
+    left: 10%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+}
+  
+.cal-container button:hover .star-3 {
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+}
+  
+.cal-container button:hover .star-4 {
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+}
+  
+.cal-container button:hover .star-5 {
+    position: absolute;
+    top: 25%;
+    left: 115%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+}
+  
+.cal-container button:hover .star-6 {
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+}
+  
+.cal-container .fil0 {
+    fill: #fffdef;
+} 
