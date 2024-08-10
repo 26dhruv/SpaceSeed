@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -53,61 +53,226 @@
             </div>
         </section>
 
-        <section id="s1" class="raleway section w-full h-[100vh] flex flex-col justify-center items-center">
+        <section id="s1" class="raleway section w-full h-auto flex flex-col justify-center items-center mt-12">
           <div class="amatic-sc-regular text-white text-[4rem] mb-12">
             Seed Advisor
           </div>
 
-          <div class="w-auto h-auto flex space-x-28">
-            <div class="product-container product-1">
+          <div class="w-auto h-auto flex space-x-28 mb-12">
+            <div class="product-container product">
               <div class="card">
-                <div class="photo"></div>
-                <div class="content">
-                  <div class="title">Nitrogen</div>
-                  <div class="bg-title">NIT</div>
-                  <div class="feature size">
-                    <div class="relative mb-4">
-                      <input type="text" id="name" name="name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                  <div class="content">
+                    <div class="title">Nitrogen</div>
+                    <div class="bg-title">NIT</div>
+                    <div class="feature">
+                      <input required="" type="text" placeholder="Nitrogen">
                     </div>
+                    <button class="btn-buy">Confirm</button>
                   </div>
-                  <button class="btn-buy">Confirm</button>
-                </div>
               </div>
             </div>
 
-            <div class="product-container product-1">
+            <div class="product-container product">
               <div class="card">
-                <div class="photo"></div>
-                <div class="content">
-                  <div class="title">Phosphorous</div>
-                  <div class="bg-title">PHS</div>
-                  <div class="feature size">
-                    <div class="relative mb-4">
-                      <input type="text" id="name" name="name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                  <div class="content">
+                    <div class="title">phosphorus</div>
+                    <div class="bg-title">PHS</div>
+                    <div class="feature">
+                      <input required="" type="text" placeholder="phosphorus">
                     </div>
+                    <button class="btn-buy">Confirm</button>
                   </div>
-                  <button class="btn-buy">Confirm</button>
-                </div>
               </div>
             </div>
 
-            <div class="product-container product-1">
+            <div class="product-container product">
               <div class="card">
-                <div class="photo"></div>
-                <div class="content">
-                  <div class="title">Potassium</div>
-                  <div class="bg-title">PTS</div>
-                  <div class="feature size">
-                    <div class="relative mb-4">
-                      <input type="text" id="name" name="name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                  <div class="content">
+                    <div class="title">Potassium</div>
+                    <div class="bg-title">PTS</div>
+                    <div class="feature">
+                      <input required="" type="text" placeholder="phosphorus">
                     </div>
+                    <button class="btn-buy">Confirm</button>
                   </div>
-                  <button class="btn-buy">Confirm</button>
-                </div>
               </div>
             </div>
           </div>
 
+          <div class="w-auto h-auto flex space-x-16">
+            <div class="product-container product">
+              <div class="card">
+                  <div class="content">
+                    <div class="title">Temperature</div>
+                    <div class="bg-title">TMP</div>
+                    <div class="feature">
+                      <input required="" type="text" placeholder="Temperature">
+                    </div>
+                    <button class="btn-buy">Confirm</button>
+                  </div>
+              </div>
+            </div>
+
+            <div class="product-container product">
+              <div class="card">
+                  <div class="content">
+                    <div class="title">Humidity</div>
+                    <div class="bg-title">PHS</div>
+                    <div class="feature">
+                      <input required="" type="text" placeholder="Humidity">
+                    </div>
+                    <button class="btn-buy">Confirm</button>
+                  </div>
+              </div>
+            </div>
+
+            <div class="product-container product">
+              <div class="card">
+                  <div class="content">
+                    <div class="title">Soil PH</div>
+                    <div class="bg-title">SPH</div>
+                    <div class="feature">
+                      <input required="" type="text" placeholder="Soil PH">
+                    </div>
+                    <button class="btn-buy">Confirm</button>
+                  </div>
+              </div>
+            </div>
+
+            <div class="product-container product">
+              <div class="card">
+                  <div class="content">
+                    <div class="title">Rainfall</div>
+                    <div class="bg-title">RFL</div>
+                    <div class="feature">
+                      <input required="" type="text" placeholder="rainfall">
+                    </div>
+                    <button class="btn-buy">Confirm</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-20 cal-container">
+            <button>
+              Calculate
+              <div class="star-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xml:space="preserve"
+                  version="1.1"
+                  style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                  viewBox="0 0 784.11 815.53"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <defs></defs>
+                  <g id="Layer_x0020_1">
+                    <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                    <path
+                      class="fil0"
+                      d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="star-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xml:space="preserve"
+                  version="1.1"
+                  style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                  viewBox="0 0 784.11 815.53"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <defs></defs>
+                  <g id="Layer_x0020_1">
+                    <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                    <path
+                      class="fil0"
+                      d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="star-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xml:space="preserve"
+                  version="1.1"
+                  style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                  viewBox="0 0 784.11 815.53"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <defs></defs>
+                  <g id="Layer_x0020_1">
+                    <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                    <path
+                      class="fil0"
+                      d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="star-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xml:space="preserve"
+                  version="1.1"
+                  style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                  viewBox="0 0 784.11 815.53"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <defs></defs>
+                  <g id="Layer_x0020_1">
+                    <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                    <path
+                      class="fil0"
+                      d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="star-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xml:space="preserve"
+                  version="1.1"
+                  style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                  viewBox="0 0 784.11 815.53"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <defs></defs>
+                  <g id="Layer_x0020_1">
+                    <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                    <path
+                      class="fil0"
+                      d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="star-6">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xml:space="preserve"
+                  version="1.1"
+                  style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                  viewBox="0 0 784.11 815.53"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <defs></defs>
+                  <g id="Layer_x0020_1">
+                    <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                    <path
+                      class="fil0"
+                      d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+            </button>
+
+          </div>
         </section>
 
         <section id="s2" class="section w-full h-[100vh] flex justify-center items-center">S2</section>
